@@ -7,8 +7,11 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "fontsource-roboto": "^3.0.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-foundation": "^0.9.6",
+    "react-player": "^2.7.0",
     "react-scripts": "4.0.0",
     "web-vitals": "^0.2.4"
   },
@@ -38,7 +41,12 @@
   },
   "description": "web site for a youth-led holiday gift-wrapping business which donates a portion of proceeds to charity",
   "main": "app.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.12.7",
+    "@babel/preset-env": "^7.12.7",
+    "babel-loader": "^8.2.1",
+    "webpack": "^5.6.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/JenJayme/elves.git"

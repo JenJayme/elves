@@ -1,0 +1,13 @@
+.homeBackground {
+    background-color: blueviolet;
+    display: -webkit-flex;
+    float: none;
+    min-height: 100vh;
+}
+
+  .logo {
+    position: fixed;
+    height: 40vmin;
+    pointer-events: none;
+  }
+  

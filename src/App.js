@@ -1,22 +1,16 @@
 import logo from './logo.svg';
+import eocLogo from './eoc-logo-vertical-snowflake.png';
 import './App.css';
+import Video from './components/video/video';
+import MyNavbar from './components/navbar/mynavbar';
 
 function App() {
   return (
     <div className="App">
+        <MyNavbar />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Video />
+        <img src={eocLogo} className="logo" alt="Cole and Co, Elves On Call" />
       </header>
     </div>
   );
