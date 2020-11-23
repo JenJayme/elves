@@ -1,0 +1,210 @@
+body {
+    /* padding-top: 330px; */
+  }
+  
+  h1, h2, h3, h4 {
+    text-align: center;
+  }
+  
+  .grid-container {
+      padding-top: 330px;
+  }
+
+  .logo {
+      position: fixed;
+      top: 5vh;
+      left: 7vh;
+      height: 50vh;
+      z-index: 10;
+  }
+  
+  .spacer {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  /* ================================= */
+  
+  /* FULL SCREEN HERO */
+
+  #myVideo {
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 0;
+  }
+  
+  .hero-full-screen {
+    height: 100vh;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: url("../images/wood-background.jpg") center center no-repeat;
+    background-size: cover;
+    z-index: -5;
+  }
+  
+  .middle-content-section {
+    position: fixed;
+    left: 35%;
+    top: 15%;
+    color: rgba(255, 255, 255, .8);
+    /* background-color: rgba(255, 255, 255, .3); */
+    text-align: left;
+    padding: 15px;
+    z-index: 2;
+  }
+  
+  .hero-full-screen .top-content-section {
+    color: white;
+    width: 100%;
+  }
+  
+  .hero-full-screen .bottom-content-section {
+    padding: 1rem;
+  }
+  
+  .hero-full-screen .bottom-content-section svg {
+    height: 3.75rem;
+    width: 3.75rem;
+    fill: #fefefe;
+  }
+  
+  .hero-full-screen {
+    background: transparent;
+  }
+
+  .top-bar-left {
+      margin-top: 50px;
+      z-index: 3;
+  }
+  
+  .hero-full-screen .top-bar .menu {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: transparent;
+  }
+  
+  .hero-full-screen .top-bar .menu-text {
+    color: #fefefe;
+  }
+  
+  .hero-full-screen .top-bar .menu li {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .hero-full-screen .top-bar .menu a {
+    background-color: rgba(13,147,71,.9);
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    margin-right: 5px;
+    color: #fefefe;
+    font-weight: bold;
+  }
+
+  .menu li:hover a:hover {
+      background-color: red;
+  }
+  
+  /* ================================= */
+  
+  /* STICKY SHRINK NAVBAR */
+  
+  .sticky-shrinknav-menu {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    top: 0;
+    padding-top: 1.2rem;
+    padding-left: 1.5rem;
+    height: 3.75rem;
+    line-height: 3.75rem;
+    width: 100%;
+    background-color: rgba(23, 121, 186, 0.1);
+    transition: all 0.5s ease;
+    font-weight: bold;
+    z-index: 5;
+    color: white;
+  }
+  
+  .sticky-shrinknav-menu li {
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+  
+  .sticky-shrinknav-menu li:hover {
+    box-shadow: 0 0 0 1px #fefefe;
+  }
+  
+  .sticky-shrinknav-menu a {
+    color: #fefefe;
+  }
+  
+  .sticky-shrinknav-header-title {
+    transition: all 0.3s ease;
+    position: relative;
+    -webkit-transform: translateY(-1.875rem);
+        -ms-transform: translateY(-1.875rem);
+            transform: translateY(-1.875rem);
+    margin-bottom: 0;
+    padding-top: 4rem;
+    color: #fefefe;
+  }
+  
+  .sticky-shrinknav-header {
+    width: 100%;
+    height: 300px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: url("../images/karate-kids-punching.jpeg") center 35% no-repeat;
+    background-size: cover;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+  }
+  
+  body.sticky-shrinknav-wrapper {
+    padding-top: 130px;
+  }
+  
+  body.sticky-shrinknav-wrapper .sticky-shrinknav-header {
+    height: 3.75rem;
+    background-color: rgba(23, 121, 186, 0.9);
+  }
+  
+  body.sticky-shrinknav-wrapper .sticky-shrinknav-header .sticky-shrinknav-header-title {
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+    transition: all 0.3s ease;
+  }
+  
