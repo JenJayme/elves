@@ -9,6 +9,13 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/app.css">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function () {
+        // https://dashboard.emailjs.com/admin/integration
+        emailjs.init('user_HwMXwEHp0KORxnvgNKatv');
+      })();
+    </script>  
   </head>
   <body>
 
@@ -16,7 +23,7 @@
       <img src="./images/eoc-logo-vertical-buttonback.png" class="logo" alt="Cole & Co: Elves on Call" />
 
         <video autoplay muted loop class="myVideo">
-          <source src="./images/christmas-tree-lights.mp4" type="video/mp4">
+          <source src="./images/Christmas-Tree-Lights-optimized.m4v" type="video/mp4">
         </video>
 
           <div class="top-content-section">
@@ -25,19 +32,19 @@
                 <div class="grid-x">
                   <div class="cell small-12 medium-2 large-2"></div>
                   <div class="cell small-12 medium-4 large-2 text-center">
-                    <a href="index.html" class="is-active"><img class="scrollBtn" src="./images/button-home.png"></a>
+                    <a href="index.html" class="is-active"><img class="menuBtn" src="./images/button-home.png"></a>
                   </div>
                   <div class="cell small-12 medium-4 large-2 text-center">
-                    <a href="services.html"><img class="scrollBtn" src="./images/button-services.png"></a>
+                    <a href="services.html"><img class="menuBtn" src="./images/button-services.png"></a>
                   </div>
                   <div class="cell small-12 medium-4 large-2 text-center">
-                    <a href="gallery.html"><img class="scrollBtn" src="./images/button-gallery.png"></a>
+                    <a href="gallery.html"><img class="menuBtn" src="./images/button-gallery.png"></a>
                   </div>
                   <div class="cell small-12 medium-4 large-2 text-center">
-                    <a href="book.html"><img class="scrollBtn active" src="./images/button-book.png"></a>
+                    <a href="book.html"><img class="menuBtn active" src="./images/button-book.png"></a>
                   </div>
                   <div class="cell small-12 medium-4 large-2 text-center">
-                    <a href="about.html"><img class="scrollBtn" src="./images/button-about.png"></a>
+                    <a href="about.html"><img class="menuBtn" src="./images/button-about.png"></a>
                   </div>
                 </div>
               </div>
@@ -46,8 +53,87 @@
           
           <div class="frame scrollCircle">
             <div class="scrollContent">
-                <h3 class="scrollText">Call an Elf</h3>
-                  <p class="text-center scrollText">Want to schedule some elf help?</p>
+
+                  <form id="elfForm" method="post">
+                    <div class="grid-container">
+                      <div class="grid-x grid-padding-x">
+                        <div class="small-12 medium-12 cell">
+
+                        <h3>Get Some Elf Help</h3>
+                        <p class="text-center">There's no shame in a little elf help to
+                          keep your holidays <br>magical and restful. What can we do for you?</p>
+
+                        </div>
+
+                        <div class="small-12 medium-6 cell">
+                          <label>First Name
+                            <input type="text" name="firstName" placeholder="Buddy">
+                          </label>
+                        </div>
+                        <div class="small-12 medium-6 cell">
+                          <label>Last Name
+                            <input type="text" name="lastName" placeholder="The Elf">
+                          </label>
+                        </div>
+
+                        <div class="small-12 medium-6 cell">
+                          <label>Email
+                            <input type="email" name="email" placeholder="buddy@northpole.com">
+                          </label>
+                        </div>
+
+                        <div class="small-12 medium-6 cell">
+                          <label>Phone
+                            <input type="tel" name="phone" placeholder="(415) 867-5309">
+                          </label>
+                        </div>
+
+                        <div class="small-12 medium-6 cell">
+                          <label>Street Address
+                            <input type="text" name="address" placeholder="30 Santa Clause Way">
+                          </label>  
+                        </div>
+
+                        <div class="small-12 medium-6 cell">
+                          <label>City
+                            <input type="text" name="city" placeholder="Novato">
+                          </label>
+                        </div>
+
+                        <div class="small-12 medium-6 cell">
+                          <label>Est. Number of Gifts To Wrap
+                            <select name="giftQty" type="text">
+                              <option>click to choose</option>
+                              <option value="1-2">1-2</option>
+                              <option value="3-5">3-5</option>
+                              <option value="5-10">5-10 <small>(10% discount)</small></option>
+                              <option value="10+">10+ <small>(15% discount)</small></option>
+                            </select>
+                          </label>
+                        </div>
+                        
+                        <div class="small-12 medium-6 cell">
+                          <label>Pickup or Delivery Needed? 
+                            <select name="trips" type="text">
+                              <option>click to choose</option>
+                              <option value="none">None (you drop off)</option>
+                              <option value="pickup">Pickup (add $5)</option>
+                              <option value="delivery">Delivery (add $5)</option>
+                              <option value="pickup+delivery">Pickup and Delivery (add $10)</option>
+                              <option value="tbd">I'll decide later</option>
+                            </select>
+                          </label>
+                        </div>
+
+                        <div class="small-12 medium-12 cell text-center">
+                          <button id="submitBtn" type="button submit" class="button center"><img src="./images/button-submit.png">
+                          </button>
+                        </div>
+
+                      </div>
+                    </div>
+                </form>
+
             </div>
           </div>
 
