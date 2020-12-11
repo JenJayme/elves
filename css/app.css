@@ -35,13 +35,14 @@ body {
 
 .expand-column-wrapper {
   height: 100vh;
-  max-width: 75rem;
+  max-width: 50rem;
   display: grid;
 }
 
 .expand-column-wrapper .cell {
   /* padding: 1rem; */
-  width: 15em;
+  width: 10em;
+  height: 30em;
   transition: all 0.5s ease-in-out;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -54,54 +55,48 @@ body {
           justify-content: center;
 }
 
-.expand-column-wrapper .cell:hover {
-  -webkit-flex-basis: 40%;
-      -ms-flex-preferred-size: 40%;
-          flex-basis: 40%;
-}
-
 .expand-column-wrapper .gallery-img:nth-of-type(1) {
   background: url("https://cdn.pixabay.com/photo/2015/10/27/12/26/gift-1008894_1280.jpg") center center no-repeat;
   grid-column: 1;
-  height: 100vh;
+  /* height: 100vh; */
   background-size: cover;
 }
 
 .expand-column-wrapper .gallery-img:nth-of-type(2) {
   background: url("https://cdn.pixabay.com/photo/2017/12/05/16/44/background-2999743_1280.jpg") center center no-repeat;
   grid-column: 2;
-  height: 100vh;
+  /* height: 100vh; */
   background-size: cover;
 }
 
 .expand-column-wrapper .gallery-img:nth-of-type(3) {
-  background: url("https://cdn.pixabay.com/photo/2018/12/07/16/27/pink-3861994_1280.jpg") center center no-repeat;
+  background: url("https://cdn.pixabay.com/photo/2017/12/18/18/38/christmas-3026688_1280.jpg") center center no-repeat;
   grid-column: 3;
-  height: 100vh;
+  /* height: 100vh; */
   background-size: cover;
 }
 
 .expand-column-wrapper .gallery-img:nth-of-type(4) {
   background: url("https://cdn.pixabay.com/photo/2019/12/06/19/06/gifts-4678018_1280.jpg") center center no-repeat;
   grid-column: 4;
-  height: 100vh;
+  width: 30em;
+  /* height: 100vh; */
   background-size: cover;
 }
 
 .expand-column-wrapper .gallery-img:nth-of-type(5) {
   background: url("https://cdn.pixabay.com/photo/2018/11/24/12/29/gifts-3835455_1280.jpg") center center no-repeat;
   grid-column: 5;
-  height: 100vh;
+  /* height: 100vh; */
   background-size: cover;
 }
 
 .expand-column-wrapper .gallery-img:nth-of-type(6) {
-  background: url("https://cdn.pixabay.com/photo/2017/12/18/18/38/christmas-3026688_1280.jpg") center center no-repeat;
   grid-column: 6;
-  height: 100vh;
+  background: url("https://cdn.pixabay.com/photo/2018/12/07/16/27/pink-3861994_1280.jpg") center center no-repeat;
+  /* height: 100vh; */
   background-size: cover;
 }
-
 
 .frame {
   position: fixed;
@@ -131,24 +126,30 @@ body {
   min-width: 100%;
   min-height: 100%;
   z-index: -15;
-  background-color: red;
+  background-image: url("https://cdn.pixabay.com/photo/2018/08/06/10/22/gift-3587240_1280.jpg");
+  background-repeat: no-repeat;
+  background-width: 100%;
+  background-size: cover;
   /* height: auto; */
 }
 
 .gallery {
   display: block;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  padding-left: 10%;
-  padding-right: 10%;
+  margin-top: -260px;
+  padding: 1rem;
+  background-color: red;
   text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 120vh;
   width: 80%;
+  /* object-fit: cover; */
+  overflow: hidden;
 }
 
 .gallery-img {
   position: relative;
-  display: -ms-flexbox;
-  width: 35em;
+  width: 25em;
   overflow: hidden;
   padding: 1rem;
   transition: all 0.5s ease-in-out;
@@ -166,7 +167,7 @@ body {
 .gallery-img:hover {
   position: relative;
   transition: all .5s ease-in-out;
-  width: 55em;;
+  width: 35em;
   z-index:999;
 }
 
@@ -237,6 +238,13 @@ h1, h2, h3, h4 {
   z-index: 10;
 }
 
+@media screen and (max-width: 39.9375em) {
+  .expand-column-wrapper {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 
 .menu a {
   color: #fefefe;
