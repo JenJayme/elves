@@ -55,6 +55,12 @@ body {
           justify-content: center;
 }
 
+.expand-column-wrapper .cell:hover {
+  -webkit-flex-basis: 40%;
+      -ms-flex-preferred-size: 40%;
+          flex-basis: 40%;
+}
+
 .expand-column-wrapper .gallery-img:nth-of-type(1) {
   background: url("https://cdn.pixabay.com/photo/2015/10/27/12/26/gift-1008894_1280.jpg") center center no-repeat;
   grid-column: 1;
@@ -79,7 +85,6 @@ body {
 .expand-column-wrapper .gallery-img:nth-of-type(4) {
   background: url("https://cdn.pixabay.com/photo/2019/12/06/19/06/gifts-4678018_1280.jpg") center center no-repeat;
   grid-column: 4;
-  width: 30em;
   /* height: 100vh; */
   background-size: cover;
 }
@@ -142,15 +147,15 @@ body {
   justify-content: center;
   align-items: center;
   height: 120vh;
-  width: 80%;
-  /* object-fit: cover; */
+  width: 70%;
+  object-fit: cover;
   overflow: hidden;
 }
 
 .gallery-img {
   position: relative;
-  width: 25em;
-  overflow: hidden;
+  width: 20em;
+  object-fit: cover;
   padding: 1rem;
   transition: all 0.5s ease-in-out;
   display: -webkit-flex;
@@ -168,6 +173,7 @@ body {
   position: relative;
   transition: all .5s ease-in-out;
   width: 35em;
+  transform-origin:bottom right;
   z-index:999;
 }
 
