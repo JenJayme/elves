@@ -62,7 +62,7 @@ body {
 }
 
 .expand-column-wrapper .gallery-img:nth-of-type(1) {
-  background: url("https://cdn.pixabay.com/photo/2015/10/27/12/26/gift-1008894_1280.jpg") center center no-repeat;
+  background: url("https://lh3.google.com/pw/ACtC-3c7MYQ3cJ6pAoSAOiaj-IBcccsZM6T52KS7vU13dZJAGZd3ErehCL4OwJWVvCtrphDf9csG_FPtMgptqF0C2XQHDZLT3WA=w1605-h903-no?authuser=0") center center no-repeat;
   grid-column: 1;
   /* height: 100vh; */
   background-size: cover;
@@ -130,11 +130,12 @@ body {
   top: 0;
   min-width: 100%;
   min-height: 100%;
+  height: fit-content;
   z-index: -15;
   background-image: url("https://cdn.pixabay.com/photo/2018/08/06/10/22/gift-3587240_1280.jpg");
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-width: 100%;
-  background-size: cover;
+  background-size: contain;
   /* height: auto; */
 }
 
@@ -142,14 +143,14 @@ body {
   display: block;
   margin-top: -260px;
   padding: 1rem;
-  background-color: red;
+  /* background-color: red; */
   text-align: center;
   justify-content: center;
   align-items: center;
-  height: 120vh;
+  /* height: 120vh; */
   width: 70%;
   object-fit: cover;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .gallery-img {
