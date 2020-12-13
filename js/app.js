@@ -1,4 +1,6 @@
-$(document).foundation()
+$(document).foundation();
+
+var elfForm = $("#elfForm");
 
 function getInputs() {
     'use strict';
@@ -31,7 +33,7 @@ $( document ).ready(function() {
     AOS.init();
     console.log( "Ready!" );
 
-    reqForm.on('submit', function (event) {
+    elfForm.on('submit', function (event) {
         event.preventDefault();
         var input = getInputs();
         emailjs.sendForm('contact_service', 'elfForm', this);

@@ -19,12 +19,12 @@
   </head>
   <body>
 
-    <div class="hero-full-screen">
-      <img src="./images/eoc-logo-vertical-buttonback.png" class="logo" alt="Cole & Co: Elves on Call" />
+    <div class="hero-full-screen" id="book-background">
+      <img src="./images/eoc-logo-vertical-buttonback.png" class="logo logo-small" alt="Cole & Co: Elves on Call" />
 
-        <video autoplay muted loop class="myVideo">
+        <!-- <video autoplay muted loop class="myVideo">
           <source src="./images/Christmas-Tree-Lights-optimized.m4v" type="video/mp4">
-        </video>
+        </video> -->
 
           <div class="top-content-section">
             <div class="top-bar">
@@ -51,58 +51,58 @@
             </div>
           </div>
           
-          <div class="frame scrollCircle">
-            <div class="scrollContent">
+          <div class="book-content">
+            <div>
 
                   <form id="elfForm" method="post">
                     <div class="grid-container">
                       <div class="grid-x grid-padding-x">
                         <div class="small-12 medium-12 cell">
 
-                        <h3>Get Some Elf Help</h3>
+                        <!-- <h3>Get Some Elf Help</h3>
                         <p class="text-center">There's no shame in a little elf help to
-                          keep your holidays <br>magical and restful. What can we do for you?</p>
+                          keep your holidays <br>magical and restful. What can we do for you?</p> -->
 
                         </div>
 
                         <div class="small-12 medium-6 cell">
                           <label>First Name
-                            <input type="text" name="firstName" placeholder="Buddy">
+                            <input type="text" id="firstName" name="firstName" placeholder="Buddy">
                           </label>
                         </div>
                         <div class="small-12 medium-6 cell">
                           <label>Last Name
-                            <input type="text" name="lastName" placeholder="The Elf">
+                            <input type="text" id="lastName" name="lastName" placeholder="The Elf">
                           </label>
                         </div>
 
                         <div class="small-12 medium-6 cell">
                           <label>Email
-                            <input type="email" name="email" placeholder="buddy@northpole.com">
+                            <input type="email" id="email" name="email" placeholder="buddy@northpole.com">
                           </label>
                         </div>
 
                         <div class="small-12 medium-6 cell">
                           <label>Phone
-                            <input type="tel" name="phone" placeholder="(415) 867-5309">
+                            <input type="tel" id="phone" name="phone" placeholder="(415) 867-5309">
                           </label>
                         </div>
 
                         <div class="small-12 medium-6 cell">
                           <label>Street Address
-                            <input type="text" name="address" placeholder="30 Santa Clause Way">
+                            <input type="text" id="address" name="address" placeholder="30 Santa Clause Way">
                           </label>  
                         </div>
 
                         <div class="small-12 medium-6 cell">
                           <label>City
-                            <input type="text" name="city" placeholder="Novato">
+                            <input type="text" id="city" name="city" placeholder="Novato">
                           </label>
                         </div>
 
                         <div class="small-12 medium-6 cell">
                           <label>Est. Number of Gifts To Wrap
-                            <select name="giftQty" type="text">
+                            <select name="giftQty" id="giftQty" type="text">
                               <option>click to choose</option>
                               <option value="1-2">1-2</option>
                               <option value="3-5">3-5</option>
@@ -114,7 +114,7 @@
                         
                         <div class="small-12 medium-6 cell">
                           <label>Pickup or Delivery Needed? 
-                            <select name="trips" type="text">
+                            <select id="trips" name="trips" type="text">
                               <option>click to choose</option>
                               <option value="none">None (you drop off)</option>
                               <option value="pickup">Pickup (add $5)</option>

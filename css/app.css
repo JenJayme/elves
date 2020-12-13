@@ -1,20 +1,38 @@
-#aboutBkg {
+#about-background {
   position: absolute;
-  background-image: url("../images/christmas-boughs-corner-art.png");
+  background-image: url("../images/christmas-background-dark-blue-accents.jpeg");
+  background-position: 30% 30%;
   background-size: cover;
+  background-position: center;
   height: fit-content;
   width: 100%;
 }
 
 .aboutContent {
-  margin-right: 30%;
-  margin-left: 10%;
+  /* background-color: rgba(255, 255, 255, .3); */
+  color: white;
+  column-count: 3;
+  margin-top: -200px;
+  margin-bottom: 50px;
+  margin-right: 10%;
+  margin-left: 25%;
+  padding: 30px;
   height: fit-content;
   z-index: 5;
 }
 
-body {
-    /* padding-top: 330px; */
+#book-background {
+  background-image: url("../images/christmas-background-old-paper.jpg");
+  background-size: cover;
+  background-position: 0 -180px;
+}
+
+.book-content {
+  margin-top: -220px;
+  margin-bottom: 50px;
+  margin-right: 15%;
+  margin-left: 25%;
+  padding: 30px;
 }
 
 .candyCane {
@@ -132,7 +150,7 @@ body {
   min-height: 100%;
   height: fit-content;
   z-index: -15;
-  background-image: url("https://cdn.pixabay.com/photo/2018/08/06/10/22/gift-3587240_1280.jpg");
+  background-image: url("../images/christmas-background-dark-5.jpeg");
   background-repeat: repeat-y;
   background-width: 100%;
   background-size: contain;
@@ -245,6 +263,10 @@ h1, h2, h3, h4 {
   z-index: 100;
 }
 
+.logo-small {
+  height: 30vh;
+}
+
 @media screen and (max-width: 39.9375em) {
   .expand-column-wrapper {
     -webkit-flex-direction: column;
@@ -307,7 +329,8 @@ h1, h2, h3, h4 {
 }
 
 .scrollCircle {
-  background-image: url('../images/button-scroll-blue.png');
+  /* background-image: url('../images/button-scroll-blue.png'); */
+  background-image: url('../images/ornament-red.png');
   background-size: 120vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -352,6 +375,12 @@ h1, h2, h3, h4 {
   color: #8a8a8a;
 }
   
+#services-background {
+  background-image: url("../images/christmas-background-dark-blue-accents.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .spacer {
   margin-top: 3rem;
   margin-bottom: 3rem;
