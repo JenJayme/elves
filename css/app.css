@@ -1,6 +1,6 @@
 #about-background {
   position: absolute;
-  background-image: url("../images/christmas-background-dark-blue-accents.jpeg");
+  background-image: url("../images/christmas-background-dark-blue-accents-optimized.jpeg");
   background-position: 30% 30%;
   background-size: cover;
   background-position: center;
@@ -150,7 +150,7 @@
   min-height: 100%;
   height: fit-content;
   z-index: -15;
-  background-image: url("../images/christmas-background-dark-5.jpeg");
+  background-image: url("../images/christmas-background-presents-optimized.png");
   background-repeat: repeat-y;
   background-width: 100%;
   background-size: contain;
@@ -376,7 +376,7 @@ h1, h2, h3, h4 {
 }
   
 #services-background {
-  background-image: url("../images/christmas-background-dark-blue-accents.jpeg");
+  background-image: url("../images/christmas-background-dark-blue-accents-optimized.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
 }
