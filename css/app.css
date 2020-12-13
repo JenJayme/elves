@@ -27,7 +27,7 @@
 }
 
 .book-content {
-  margin-top: -220px;
+  margin-top: -270px;
   margin-bottom: 50px;
   margin-right: 15%;
   margin-left: 25%;
@@ -342,6 +342,10 @@ h1, h2, h3, h4 {
   min-width: 100%;
   min-height: 100%;
   z-index: 0;
+}
+
+.red {
+  color:#c70109;
 }
 
 .scrollCircle {
