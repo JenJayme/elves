@@ -2,22 +2,31 @@
   position: absolute;
   background-image: url("../images/christmas-background-dark-blue-accents-optimized.jpeg");
   background-position: 30% 30%;
-  background-size: cover;
-  height: 100vh;
+  height: 100%;
   width: 100%;
+  background-size: cover;
 }
 
 .aboutContent {
-  /* background-color: rgba(255, 255, 255, .3); */
   color: white;
   column-count: 3;
-  margin-top: -200px;
-  margin-bottom: 50px;
+  margin-top: -180px;
+  /* margin-bottom: 20%; */
+  /* padding-bottom: 30%; */
   margin-right: 10%;
   margin-left: 25%;
   padding: 30px;
-  height: fit-content;
+  height: 110%;
   z-index: 5;
+}
+
+.aboutContent a {
+  color: #a2a7f7;
+}
+
+body, h1, h2, h3, h4, h5 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 1.15rem;
 }
 
 #book-background {
@@ -149,13 +158,22 @@
 }
 
 .frameContent {
-  padding-top: 8%;
+  padding-top: 10%;
   margin: 5% 30% 10% 30%;
   z-index: 10;
 }
 
 .frameContent p {
-  line-height: 95%;
+  font-size: 1.3rem;
+  line-height: 97%;
+}
+
+.frameContent h1 {
+  font-size: 2rem;
+}
+
+.frameContent h3 {
+  font-size: 1.5rem;
 }
 
 .gallery-background {
@@ -238,6 +256,7 @@ h1, h2, h3, h4 {
 }
 
 .hero-full-screen .top-content-section {
+  margin-left: 10%;
   background: transparent;
   color: white;
   width: 100%;
@@ -275,20 +294,12 @@ h1, h2, h3, h4 {
   position: fixed;
   top: 5vh;
   left: 7vh;
-  height: 45vh;
+  height: 40%;
   z-index: 100;
 }
 
 .logo-small {
   height: 30vh;
-}
-
-@media screen and (max-width: 39.9375em) {
-  .expand-column-wrapper {
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
 }
 
 .menu a {
@@ -301,14 +312,21 @@ h1, h2, h3, h4 {
 }
 
 .middle-content-section {
-  position: fixed;
-  margin-left: 10%;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  text-align: left;
+  position: absolute;
+  margin-left: 35%;
   width: 80%;
   top: 15%;
-  color: rgba(255, 255, 255, .8);
+  color: #a2a7f7;
   text-align: left;
   padding: 15px;
   z-index: 2;
+}
+
+.middle-content-section h4 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  text-align: left;
 }
 
 .menuBtn {
@@ -412,9 +430,11 @@ h1, h2, h3, h4 {
 }
 
 .top-bar {
-  margin-left: 17%;
+  margin-left: 10%;
+  margin-right: 5%;
   margin-top: 50px;
   background: transparent;
+  z-index: 3;
 }
 
 .top-bar-left {
@@ -483,6 +503,69 @@ h1, h2, h3, h4 {
   top: 0;
   border-radius: 10px;
 }
+
+  /* ============================================= */
+
+  @media screen and (max-width: 1100px) {
+    .logo {
+      position: fixed;
+      top: 5vh;
+      left: 7vh;
+      height: 30%;
+      z-index: 100;
+    }
+
+    .frame {
+      position: fixed;
+      height: 80vh;
+      left: 10%;
+      top: 60vh;
+      object-fit: fill;
+      /* animation-name: slideLeft; */
+      /* animation-duration: 1s; */
+      z-index: 2;
+    }
+
+    .candyCane {
+      background-size: 600px auto;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 80vh;
+      left: 0;
+      top: 20vh;
+      z-index: 2;
+    }
+
+    .top-content-section {
+      background: transparent;
+      color: white;
+      width: 100%;
+      margin-top: 0;
+      margin-left: 0;
+      height: 20%;
+    }
+
+    .top-bar {
+      margin-right: 0;
+    }
+
+    .menuBtn {
+      height: 50px;
+      z-index: -10;
+      color: white;
+      transition: .5s ease-in-out;
+    }
+
+    .active {
+      /* height: 80px; */
+      transform: translate(0);
+    }
+
+    .middle-content-section {
+      margin-left: 40%;
+    }
+
+  }
 
   /* ============================================= */
 
