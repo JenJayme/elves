@@ -567,6 +567,79 @@ h1, h2, h3, h4 {
 
   }
 
+  @media screen and (max-width: 640px) {
+    .logo {
+      position: fixed;
+      top: 5vh;
+      left: 7vh;
+      height: 30%;
+      z-index: 100;
+    }
+
+    .frame {
+      position: fixed;
+      height: 100vh;
+      left: 0;
+      top: 30vh;
+      object-fit: fill;
+      /* animation-name: slideLeft; */
+      /* animation-duration: 1s; */
+      z-index: 2;
+    }
+
+    .frameContent {
+      padding-top: 10%;
+      margin: 8% 10% 0 10%;
+      z-index: 10;
+    }
+
+    .frameContent p {
+      font-size: 1rem;
+      line-height: 70%;
+    }
+    
+    .frameContent h1 {
+      font-size: 1.4rem;
+    }
+    
+    .frameContent h3 {
+      font-size: 1.2rem;
+    }    
+
+    .candyCane {
+      background-size: 100%;
+      height: 60vh;
+      top: 30vh;
+      z-index: 2;
+    }
+
+    .top-content-section {
+      margin-top: 0;
+      margin-left: 0;
+    }
+
+    .top-bar {
+      margin-right: 0;
+    }
+
+    .menuBtn {
+      height: 50px;
+      z-index: -10;
+      color: white;
+      transition: .5s ease-in-out;
+    }
+
+    .active {
+      /* height: 80px; */
+      transform: translate(0);
+    }
+
+    .middle-content-section {
+      margin-left: 40%;
+    }
+
+  }
+
   /* ============================================= */
 
   @keyframes slideLeft {
