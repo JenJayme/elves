@@ -24,15 +24,23 @@
   color: #a2a7f7;
 }
 
+.active {
+  height: 80px;
+  transform: translate(-15%);
+}
+
 body, h1, h2, h3, h4, h5 {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 1.15rem;
 }
 
 #book-background {
+  position: absolute;
   background-image: url("../images/christmas-background-old-paper-optimized.jpg");
-  background-size: cover;
   background-position: 0 -180px;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
 }
 
 .book-content {
@@ -41,6 +49,20 @@ body, h1, h2, h3, h4, h5 {
   margin-right: 15%;
   margin-left: 25%;
   padding: 30px;
+}
+
+.book-content label {
+  font-size: 1.1em;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.book-content h2 {
+  font-size: 2em;
+}
+
+.book-content h4 {
+  font-size: 1.6em;
 }
 
 .candyCane {
@@ -63,70 +85,6 @@ body, h1, h2, h3, h4, h5 {
   height: 100vh;
   max-width: 50rem;
   display: grid;
-}
-
-.expand-column-wrapper .cell {
-  /* padding: 1rem; */
-  width: 10em;
-  height: 30em;
-  transition: all 0.5s ease-in-out;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.expand-column-wrapper .cell:hover {
-  -webkit-flex-basis: 40%;
-      -ms-flex-preferred-size: 40%;
-          flex-basis: 40%;
-}
-
-.expand-column-wrapper .gallery-img:nth-of-type(1) {
-  background: url("https://lh3.google.com/pw/ACtC-3c7MYQ3cJ6pAoSAOiaj-IBcccsZM6T52KS7vU13dZJAGZd3ErehCL4OwJWVvCtrphDf9csG_FPtMgptqF0C2XQHDZLT3WA=w1605-h903-no?authuser=0") center center no-repeat;
-  grid-column: 1;
-  /* height: 100vh; */
-  background-size: cover;
-}
-
-.expand-column-wrapper .gallery-img:nth-of-type(2) {
-  background: url("https://cdn.pixabay.com/photo/2017/12/05/16/44/background-2999743_1280.jpg") center center no-repeat;
-  grid-column: 2;
-  /* height: 100vh; */
-  background-size: cover;
-}
-
-.expand-column-wrapper .gallery-img:nth-of-type(3) {
-  background: url("https://cdn.pixabay.com/photo/2017/12/18/18/38/christmas-3026688_1280.jpg") center center no-repeat;
-  grid-column: 3;
-  /* height: 100vh; */
-  background-size: cover;
-}
-
-.expand-column-wrapper .gallery-img:nth-of-type(4) {
-  background: url("https://cdn.pixabay.com/photo/2019/12/06/19/06/gifts-4678018_1280.jpg") center center no-repeat;
-  grid-column: 4;
-  /* height: 100vh; */
-  background-size: cover;
-}
-
-.expand-column-wrapper .gallery-img:nth-of-type(5) {
-  background: url("https://cdn.pixabay.com/photo/2018/11/24/12/29/gifts-3835455_1280.jpg") center center no-repeat;
-  grid-column: 5;
-  /* height: 100vh; */
-  background-size: cover;
-}
-
-.expand-column-wrapper .gallery-img:nth-of-type(6) {
-  grid-column: 6;
-  background: url("https://cdn.pixabay.com/photo/2018/12/07/16/27/pink-3861994_1280.jpg") center center no-repeat;
-  /* height: 100vh; */
-  background-size: cover;
 }
 
 .footer {
@@ -165,10 +123,12 @@ body, h1, h2, h3, h4, h5 {
 
 .frameContent p {
   font-size: 1.3rem;
-  line-height: 97%;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .frameContent h1 {
+  margin-top: -.2em;
   font-size: 2rem;
 }
 
@@ -290,6 +250,12 @@ h1, h2, h3, h4 {
   font-weight: bold;
 }
 
+#home-background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
 .logo {
   position: fixed;
   top: 5vh;
@@ -348,11 +314,6 @@ h1, h2, h3, h4 {
   height: 85px;
 }
 
-.active {
-  height: 80px;
-  transform: translate(-15%);
-}
-
 .myVideo {
   position: fixed;
   left: 0;
@@ -362,60 +323,25 @@ h1, h2, h3, h4 {
   z-index: 0;
 }
 
+#ornaments {
+  /* z-index: 100; */
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
 .red {
   color:#c70109;
 }
-
-.scrollCircle {
-  /* background-image: url('../images/button-scroll-blue.png'); */
-  background-image: url('../images/ornament-red.png');
-  background-size: 120vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 2;
-  left: 20%;
-}
-
-.scrollContent {
-  margin-top: -20%;
-  color: white;
-  margin-left: 35%;
-  margin-right: 28%;
-}
-
-.scrollContent label {
-  color: white;
-  margin-left: 0;
-}
-
-.scrollContent p {
-  font-size: 14px;
-  margin-top: -3px;
-  margin-bottom: 5px;
-}
-
-.scrollContent input, .scrollContent select {
-  padding-bottom: -5px;
-  color: #8a8a8a;
-  background-color: rgba(255, 255, 255, .8);
-  margin-bottom: 5px;
-}
-
-.scrollContent input::-webkit-input-placeholder {
-  color: #8a8a8a;
-}
-
-.scrollContent input:-ms-input-placeholder {
-  color: #8a8a8a;
-}
-
-.scrollContent input::placeholder {
-  color: #8a8a8a;
-}
   
 #services-background {
+  position: absolute;
   background-image: url("../images/christmas-background-dark-blue-accents-optimized.jpeg");
   background-repeat: no-repeat;
+  /* background-position: 30% 30%; */
+  height: 100%;
+  width: 100%;
   background-size: cover;
 }
 
@@ -430,7 +356,7 @@ h1, h2, h3, h4 {
 }
 
 .top-bar {
-  margin-left: 10%;
+  margin-left: 15%;
   margin-right: 5%;
   margin-top: 50px;
   background: transparent;
@@ -568,6 +494,24 @@ h1, h2, h3, h4 {
   }
 
   @media screen and (max-width: 640px) {
+
+    .frame {
+      width: 90%;
+      height: auto;
+    }
+
+    .candyCane {
+      /* background-image: url('../images/candy-cane-frame-vertical.png'); */
+      background-image: none;
+      /* background-size: auto 100%; */
+      background-position: center;
+      background-repeat: no-repeat;
+      /* height: 90vh; */
+      left: 0;
+      top: 7%;
+      z-index: 2;
+    }
+
     .logo {
       position: fixed;
       top: 5vh;
@@ -576,18 +520,8 @@ h1, h2, h3, h4 {
       z-index: 100;
     }
 
-    .frame {
-      position: fixed;
-      height: 100vh;
-      left: 0;
-      top: 30vh;
-      object-fit: fill;
-      /* animation-name: slideLeft; */
-      /* animation-duration: 1s; */
-      z-index: 2;
-    }
-
     .frameContent {
+      color: white;
       padding-top: 10%;
       margin: 8% 10% 0 10%;
       z-index: 10;
@@ -595,7 +529,7 @@ h1, h2, h3, h4 {
 
     .frameContent p {
       font-size: 1rem;
-      line-height: 70%;
+      line-height: 100%;
     }
     
     .frameContent h1 {
@@ -607,7 +541,7 @@ h1, h2, h3, h4 {
     }    
 
     .candyCane {
-      background-size: 100%;
+      background-size: 70%;
       height: 60vh;
       top: 30vh;
       z-index: 2;
