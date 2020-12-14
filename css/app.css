@@ -281,7 +281,7 @@ h1, h2, h3, h4 {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   text-align: left;
   position: absolute;
-  margin-left: 35%;
+  margin-left: 28%;
   width: 80%;
   top: 15%;
   color: #a2a7f7;
@@ -293,6 +293,7 @@ h1, h2, h3, h4 {
 .middle-content-section h4 {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   text-align: left;
+  font-size: 1.3em;
 }
 
 .menuBtn {
@@ -311,7 +312,7 @@ h1, h2, h3, h4 {
 .menuBtn:hover {
   transition: .5s ease-in-out;
   transform: translate(-15%);
-  height: 85px;
+  height: 14%;
 }
 
 .myVideo {
@@ -371,9 +372,6 @@ h1, h2, h3, h4 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
   
   /* ============================================= */
@@ -493,31 +491,27 @@ h1, h2, h3, h4 {
 
   }
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 900px) {
 
-    .frame {
-      width: 90%;
-      height: auto;
-    }
-
-    .candyCane {
-      /* background-image: url('../images/candy-cane-frame-vertical.png'); */
-      background-image: none;
-      /* background-size: auto 100%; */
-      background-position: center;
-      background-repeat: no-repeat;
-      /* height: 90vh; */
-      left: 0;
-      top: 7%;
-      z-index: 2;
+    #elfForm {
+      margin-top: -200px;
     }
 
     .logo {
       position: fixed;
       top: 5vh;
       left: 7vh;
-      height: 30%;
+      height: 25%;
       z-index: 100;
+    }
+
+    .candyCane {
+      background-image: none;
+      background-position: center;
+      background-repeat: no-repeat;
+      left: 0;
+      top: 7%;
+      z-index: 2;
     }
 
     .frameContent {
@@ -525,6 +519,15 @@ h1, h2, h3, h4 {
       padding-top: 10%;
       margin: 8% 10% 0 10%;
       z-index: 10;
+    }
+
+  }
+
+  @media screen and (max-width: 640px) {
+
+    .frame {
+      width: 90%;
+      height: auto;
     }
 
     .frameContent p {
@@ -548,8 +551,8 @@ h1, h2, h3, h4 {
     }
 
     .top-content-section {
-      margin-top: 0;
-      margin-left: 0;
+      margin-top: -5%;
+      margin-left: 50%;
     }
 
     .top-bar {
@@ -557,7 +560,8 @@ h1, h2, h3, h4 {
     }
 
     .menuBtn {
-      height: 50px;
+      position: relative;
+      height: 45px;
       z-index: -10;
       color: white;
       transition: .5s ease-in-out;
@@ -569,7 +573,8 @@ h1, h2, h3, h4 {
     }
 
     .middle-content-section {
-      margin-left: 40%;
+      margin-left: 10%;
+      top: 35%
     }
 
   }
