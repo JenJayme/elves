@@ -497,6 +497,16 @@ h1, h2, h3, h4 {
       margin-top: -200px;
     }
 
+    .aboutContent {
+      column-count: 2;
+      margin-top: -180px;
+      margin-right: 10%;
+      margin-left: 25%;
+      padding: 30px;
+      height: 110%;
+      z-index: 5;
+    } 
+
     .logo {
       position: fixed;
       top: 5vh;
@@ -524,6 +534,21 @@ h1, h2, h3, h4 {
   }
 
   @media screen and (max-width: 640px) {
+
+    #about-background {
+      height: auto;
+      background-position: 30% 30%;
+    }
+
+    .aboutContent {
+      column-count: 1;
+      margin-top: 25%;
+      margin-right: 0;
+      margin-left: 0;
+      /* padding: 30px; */
+      /* height: 110%; */
+      z-index: 5;
+    }
 
     .frame {
       width: 90%;
