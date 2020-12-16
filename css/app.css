@@ -137,7 +137,7 @@ body, h1, h2, h3, h4, h5 {
   font-size: 1.5rem;
 }
 
-.gallery-background {
+#gallery-background {
   position: absolute;
   left: 0;
   top: 0;
@@ -149,7 +149,6 @@ body, h1, h2, h3, h4, h5 {
   background-repeat: repeat-y;
   background-width: 100%;
   background-size: contain;
-  /* height: auto; */
 }
 
 .gallery {
@@ -313,7 +312,7 @@ h1, h2, h3, h4 {
 .menuBtn:hover {
   transition: .5s ease-in-out;
   transform: translate(-15%);
-  height: 14%;
+  height: 75px;
 }
 
 .myVideo {
@@ -481,6 +480,12 @@ h1, h2, h3, h4 {
       transition: .5s ease-in-out;
     }
 
+    .menuBtn:hover {
+      transition: .5s ease-in-out;
+      transform: translate(-15%);
+      height: 65px;
+    }
+
     .active {
       /* height: 80px; */
       transform: translate(0);
@@ -608,6 +613,12 @@ h1, h2, h3, h4 {
       z-index: -10;
       color: white;
       transition: .5s ease-in-out;
+    }
+
+    .menuBtn:hover {
+      transition: .5s ease-in-out;
+      transform: translate(-15%);
+      height: 15%;
     }
 
     .active {
