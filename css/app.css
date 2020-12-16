@@ -598,9 +598,17 @@ h1, h2, h3, h4 {
       z-index: 2;
     }
 
+    .logo {
+      position: fixed;
+      top: 5vh;
+      left: 4vh;
+      height: 17%;
+      z-index: 100;
+    }
+
     .top-content-section {
       margin-top: -5%;
-      margin-left: 50%;
+      margin-left: 47%;
     }
 
     .top-bar {
