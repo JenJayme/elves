@@ -67,19 +67,15 @@ body, h1, h2, h3, h4, h5 {
 }
 
 .candyCane {
+  position: absolute;
   background-image: url('../images/candy-cane-frame.png');
-  background-size: 800px auto;
+  background-size: 80% auto;
   background-position: center;
   background-repeat: no-repeat;
   height: 90vh;
   left: 30%;
   top: 7%;
   z-index: 2;
-}
-
-.shrink {
-  height: 20vh;
-  animation: shrink;
 }
 
 .expand-column-wrapper {
@@ -105,19 +101,9 @@ body, h1, h2, h3, h4, h5 {
   height: 45px;
 }
 
-.frame {
-  position: fixed;
-  height: 95vh;
-  left: 30%;
-  top: 7%;
-  object-fit: contain;
-  animation-name: slideLeft;
-  animation-duration: 1s;
-  z-index: 2;
-}
-
 .frameContent {
-  padding-top: 10%;
+  position: relative;
+  padding-top: 12%;
   margin: 5% 30% 10% 30%;
   z-index: 10;
 }
@@ -155,14 +141,11 @@ body, h1, h2, h3, h4, h5 {
   display: block;
   margin-top: -260px;
   padding: 1rem;
-  /* background-color: red; */
   text-align: center;
   justify-content: center;
   align-items: center;
-  /* height: 120vh; */
   width: 70%;
   object-fit: cover;
-  /* overflow: hidden; */
 }
 
 .gallery-img {
@@ -213,41 +196,6 @@ h1, h2, h3, h4 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   z-index: -5;
-}
-
-.hero-full-screen .top-content-section {
-  margin-left: 10%;
-  background: transparent;
-  color: white;
-  width: 100%;
-}
-
-.hero-full-screen .bottom-content-section {
-  padding: 1rem;
-}
-
-.hero-full-screen .bottom-content-section svg {
-  height: 3.75rem;
-  width: 3.75rem;
-  fill: #fefefe;
-}
-
-.hero-full-screen .top-bar .menu {
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background: transparent;
-}
-
-.hero-full-screen .top-bar .menu-text {
-  background: transparent;
-  color: #fefefe;
-}
-
-.hero-full-screen .top-bar a {
-  background: transparent;
-  color: #fefefe;
-  font-weight: bold;
 }
 
 #home-background {
@@ -326,7 +274,7 @@ h1, h2, h3, h4 {
 
 #ornaments {
   /* z-index: 100; */
-  position: fixed;
+  position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -339,11 +287,16 @@ h1, h2, h3, h4 {
 #services-background {
   position: absolute;
   background-image: url("../images/christmas-background-dark-blue-accents-optimized.jpeg");
-  background-repeat: no-repeat;
-  /* background-position: 30% 30%; */
-  height: 100%;
+  /* background-repeat: no-repeat; */
+  /* background-position: 0 0; */
+  height: 100vh;
   width: 100%;
   background-size: cover;
+}
+
+.shrink {
+  height: 20vh;
+  animation: shrink;
 }
 
 .spacer {
@@ -359,9 +312,13 @@ h1, h2, h3, h4 {
 .top-bar {
   margin-left: 15%;
   margin-right: 5%;
-  margin-top: 50px;
+  margin-top: 15px;
+  width: 100%;
   background: transparent;
   z-index: 3;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .top-bar-left {
@@ -431,6 +388,7 @@ h1, h2, h3, h4 {
   /* ============================================= */
 
   @media screen and (max-width: 1100px) {
+
     .logo {
       position: fixed;
       top: 5vh;
@@ -439,38 +397,22 @@ h1, h2, h3, h4 {
       z-index: 100;
     }
 
-    .frame {
-      position: fixed;
-      height: 80vh;
-      left: 10%;
-      top: 60vh;
-      object-fit: fill;
-      /* animation-name: slideLeft; */
-      /* animation-duration: 1s; */
-      z-index: 2;
+    .frameContent {
+      margin: -5% 30% 10% 30%;    
     }
 
     .candyCane {
-      background-size: 600px auto;
-      background-position: center;
-      background-repeat: no-repeat;
       height: 80vh;
       left: 0;
       top: 20vh;
       z-index: 2;
     }
 
-    .top-content-section {
+    .top-bar {
+      margin: 0;
       background: transparent;
       color: white;
-      width: 100%;
-      margin-top: 0;
-      margin-left: 0;
       height: 20%;
-    }
-
-    .top-bar {
-      margin-right: 0;
     }
 
     .menuBtn {
@@ -513,33 +455,75 @@ h1, h2, h3, h4 {
       z-index: 5;
     } 
 
+    .candyCane {
+      background-image: none;
+    }
+
     .logo {
       position: fixed;
       top: 5vh;
       left: 7vh;
-      height: 25%;
+      height: 130px;
       z-index: 100;
-    }
-
-    .candyCane {
-      background-image: none;
-      background-position: center;
-      background-repeat: no-repeat;
-      left: 0;
-      top: 7%;
-      z-index: 2;
     }
 
     .frameContent {
       color: white;
       padding-top: 10%;
-      margin: 8% 10% 0 10%;
+      margin: 5% 10% 0 10%;
       z-index: 10;
+      width: 40%;
+    }
+
+    /* .frame {
+      width: 90%;
+      height: auto;
+    } */
+
+    .frameContent p {
+      font-size: 1rem;
+      line-height: 1.4rem;
+    }
+    
+    .frameContent h1 {
+      font-size: 1.4rem;
+    }
+    
+    .frameContent h3 {
+      font-size: 1.2rem;
+    }   
+
+    .menuBtn {
+      height: 40px;
+    }
+    
+    #ornaments {
+      /* z-index: 100; */
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+    }
+
+    #services-background {
+      width: 100%;
+      background-size: cover;
+    }
+
+    .top-bar {
+      margin-top: 0;
+      width: 100%;
+      margin-left: 30%;
+      margin-right: 30%;
+    }
+
+    .top-bar-left {
+      margin-left: 0;
     }
 
   }
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 770px) {
 
     #about-background {
       height: auto;
@@ -578,9 +562,14 @@ h1, h2, h3, h4 {
       height: auto;
     }
 
+    .frameContent {
+      margin-left: 5%;
+      width: 65%;
+    }
+
     .frameContent p {
       font-size: 1rem;
-      line-height: 100%;
+      line-height: 1.4rem;
     }
     
     .frameContent h1 {
@@ -601,18 +590,14 @@ h1, h2, h3, h4 {
     .logo {
       position: fixed;
       top: 5vh;
-      left: 4vh;
+      left: 3%;
       height: 17%;
       z-index: 100;
     }
 
-    .top-content-section {
-      margin-top: -5%;
-      margin-left: 47%;
-    }
-
     .top-bar {
-      margin-right: 0;
+      margin-top: -5%;
+      margin-left: 50%;
     }
 
     .menuBtn {
