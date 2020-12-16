@@ -1,9 +1,5 @@
-li {
-  color: white;
-}
-
 #about-background {
-  position: absolute;
+  position: fixed;
   background-image: url("../images/christmas-background-dark-blue-accents-optimized.jpeg");
   background-position: 30% 30%;
   height: 100%;
@@ -50,7 +46,8 @@ body, h1, h2, h3, h4, h5 {
 }
 
 .book-content {
-  margin-top: -270px;
+  position: relative;
+  margin-top: -350px;
   margin-bottom: 50px;
   margin-right: 15%;
   margin-left: 25%;
@@ -109,7 +106,7 @@ body, h1, h2, h3, h4, h5 {
 .frameContent {
   position: relative;
   padding-top: 12%;
-  margin: 5% 30% 10% 30%;
+  margin: 0 30% 10% 30%;
   z-index: 10;
 }
 
@@ -209,7 +206,7 @@ h1, h2, h3, h4 {
 }
 
 .logo {
-  position: fixed;
+  position: absolute;
   top: 5vh;
   left: 7vh;
   height: 40%;
@@ -305,6 +302,7 @@ h1, h2, h3, h4 {
 
 .top-bar {
   margin-top: 15px;
+  width: 100%;
   background: transparent;
 }
 
@@ -331,11 +329,23 @@ h1, h2, h3, h4 {
   @media screen and (max-width: 1100px) {
 
     .logo {
-      position: fixed;
       top: 5vh;
-      left: 7vh;
-      height: 30%;
-      z-index: 100;
+      left: 5vh;
+      height: 25%;
+    }
+
+    .top-bar {
+      margin-left: 15%;
+    }
+
+    .top-bar-left {
+      margin-left: 0;
+      margin-right: 0;
+      padding: 0;
+    }
+
+    .menuBtn {
+      height: 50px;
     }
 
     .frameContent {
@@ -347,16 +357,6 @@ h1, h2, h3, h4 {
       left: 0;
       top: 20vh;
       z-index: 2;
-    }
-
-    .top-bar {
-    }
-
-    .menuBtn {
-      height: 50px;
-      z-index: -10;
-      color: white;
-      transition: .5s ease-in-out;
     }
 
     .menuBtn:hover {
@@ -443,7 +443,7 @@ h1, h2, h3, h4 {
     }
 
     .services-background {
-      width: 100%;
+      width: auto;
       background-size: cover;
     }
 
