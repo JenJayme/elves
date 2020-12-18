@@ -556,6 +556,9 @@ h1, h2, h3, h4 {
       z-index: 2;
     }
 
+    #galleryCont {
+      margin-top: -20px;
+    }
   }
 
   @media screen and (max-width: 553px) {
