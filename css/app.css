@@ -276,7 +276,7 @@ h1, h2, h3, h4 {
 }
   
 .services-background {
-  position: fixed;
+  position: absolute;
   background-image: url("../images/christmas-background-dark-blue-accents-optimized.jpeg");
   height: 100%;
   width: 100%;
