@@ -1,5 +1,5 @@
 #about-background {
-  position: fixed;
+  position: absolute;
   background-image: url("../images/christmas-background-dark-blue-accents-optimized.jpeg");
   background-position: 30% 30%;
   height: 100%;
@@ -10,12 +10,13 @@
 .aboutContent {
   color: white;
   column-count: 3;
-  margin-top: -180px;
+  margin-top: -260px;
   /* margin-bottom: 20%; */
   /* padding-bottom: 30%; */
-  margin-right: 10%;
+  max-width: 90%;
+  margin-right: 20%;
   margin-left: 25%;
-  padding: 30px;
+  /* padding: 20px; */
   height: 110%;
   z-index: 5;
 }
