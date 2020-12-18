@@ -210,6 +210,7 @@ h1, h2, h3, h4 {
   top: 5vh;
   left: 7vh;
   height: 40%;
+  max-height: 240px;
   z-index: 100;
 }
 
@@ -519,7 +520,7 @@ h1, h2, h3, h4 {
     }
     
     .book-content {
-      margin-top: -140px;
+      margin-top: -110px;
       /* margin-bottom: 50px; */
       margin-left: 0;
       margin-right: 0;
