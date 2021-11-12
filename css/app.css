@@ -254,6 +254,16 @@ h1, h2, h3, h4 {
   font-size: 1.3em;
 }
 
+.middle-content-section a {
+  color: #a2a7f7;
+}
+
+.middle-content-section a:hover {
+  color: red;
+  font-size: 1.4em;
+  transition: .5s ease;
+}
+
 .myVideo {
   position: fixed;
   left: 0;
