@@ -55,12 +55,5 @@ $( document ).ready(function() {
       alert(JSON.stringify(err));
     });
 });
-
-
-    // elfForm.on('submit', function (event) {
-    //     event.preventDefault();
-    //     var input = getInputs();
-    //     emailjs.sendForm('contact_service', 'elfForm', this);
-    //   })
   
 });
